@@ -1,0 +1,122 @@
+
+people.css <<<<<<<<
+
+.body {
+
+  background-color: orangered!important;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 40px;
+
+} 
+
+.container-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 40px;
+
+} 
+
+.person-card {
+  background-color: lightgreen;
+  margin: 5px;
+  border: 5px double black;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.container-home {
+  display: flex;
+  background-color: green;  
+  flex-wrap: wrap; 
+  align-items: flex-start; justify-content: flex-start;
+
+}
+
+.card {
+  background-color: lightgreen;
+  margin: 5px;
+  border: 5px double black;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.site-footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/*   
+  gap: 10px;
+
+.container
+  display: flex;
+  background-color: DodgerBlue;  
+  flex-wrap: wrap;
+  align-items: center; justify-content: center;
+
+
+
+
+*/
+/*
+.person-card { 
+  width: auto;
+  padding: 10px; 
+  margin: 5px;
+  border: 5px double black;
+  border-radius: 10px;
+  background: lightgreen;
+  position: static;  ganz wichtig! */
+}
+
+ /*
+.avatar {
+  border-radius: 50%;
+}
+*/
+
+/*
+justify-content: center;
+    center
+    flex-start (default)
+    flex-end
+    space-around
+    space-between
+    space-evenly
+
+
+align-items: center;
+    normal (default)
+    stretch
+    center
+    flex-start
+    flex-end
+    baseline
+
+
+
+
+
+
+
+
+flex-flow: row wrap;
+*/
+
+
+/////////////////////////////////////
+

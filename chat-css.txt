@@ -1,0 +1,95 @@
+//////////////////////////////////////////
+
+
+.card {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+
+  padding: 15px;
+  margin: 15px 0;
+
+  background: #f5f7fb;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover Effekt */
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* Bild links */
+.card-left img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Mitte */
+.card-center {
+  flex: 1;
+}
+
+.card-center h3 {
+  margin: 0 0 10px;
+  color: #2d4262;
+}
+
+.card-center p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Rechts */
+.card-right {
+  width: 250px;
+  font-size: 0.9em;
+  color: #444;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card-left img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-right {
+    width: 100%;
+  }
+}
+
+//////////////////////////////////////////
+
+
+ <div class="card-left">
+    <% if person.photo.attached? %>
+      <%= image_tag person.photo %>
+    <% end %>
+  </div>
+
+  <div class="card-center">
+    <h3><%= link_to person.full_name, person %></h3>
+
+    <p><strong>Geboren:</strong> <%= person.birthdate %></p>
+    <p><strong>Gestorben:</strong> <%= person.dethdate %></p>
+  </div>
+
+  <% if action_name == "show" %>
+    <div class="card-right">
+      <p><strong>Weg:</strong><br><%= person.way_description %></p>
+      <p><strong>Notizen:</strong><br><%= person.notes %></p>
+    </div>
+  <% end %>
+
+</div>
+
